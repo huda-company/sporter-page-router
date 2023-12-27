@@ -27,7 +27,6 @@ import {
   Loader2,
   User
 } from 'lucide-react';
-import { formSchema } from './_validation/schema';
 import {
   Select,
   SelectContent,
@@ -38,9 +37,13 @@ import {
 import AlertModal from '@/components/AlertModal';
 import { AUTH_PAGE_URL } from '@/constants/pageURL';
 import { AlertModalProps } from '@/components/AlertModal/types';
-import { initAlerModalValue, initSignUpForm } from './verify/_config';
 import { API_VERSION, BASE_URL } from '^/config/env';
 import { useTranslations } from 'next-intl';
+import { formSchema } from '^/config/auth/signup/validations/schema';
+import {
+  initAlerModalValue,
+  initSignUpForm
+} from '^/config/auth/signup/config';
 
 const SignUpForm = () => {
   const t = useTranslations();

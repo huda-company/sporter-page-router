@@ -1,6 +1,6 @@
 import { AlertModalProps } from '@/components/AlertModal/types';
 import { z } from 'zod';
-import { formSchema } from '../../_validation/schema';
+import { formSchema } from './validations/schema';
 
 export const initAlerModalValue: AlertModalProps = {
   content: '',

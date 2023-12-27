@@ -8,8 +8,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { ChangeEvent, useState } from 'react';
-import { initAlerModalValue } from './_config';
 import { respBody } from '^/config/serverResponse';
+import { initAlerModalValue } from '^/config/auth/signup/config';
 
 const SignupVerif = () => {
   const router = useRouter();

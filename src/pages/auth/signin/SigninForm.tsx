@@ -16,10 +16,10 @@ import * as z from 'zod';
 import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { AlertModalProps } from '@/components/AlertModal/types';
-import { initAlerModalValue } from '../signup/verify/_config';
 import AlertModal from '@/components/AlertModal';
 import { useTranslations } from 'next-intl';
 import { capitalizeStr } from '^/utils/capitalizeStr';
+import { initAlerModalValue } from '^/config/auth/signup/config';
 
 const SignInForm = () => {
   const router = useRouter();
