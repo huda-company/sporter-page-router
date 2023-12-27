@@ -10,7 +10,6 @@ export const apiMware = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     const token = await getTokenFromRequest(req);
-    console.log('apiMware', token);
 
     if (!url.includes('signin') && !url.includes('signup')) {
       // Verify the token
