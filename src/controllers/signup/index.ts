@@ -60,13 +60,11 @@ export const doSignup = async (req: NextApiRequest, res: NextApiResponse) => {
 
       sendEmail(emailParam);
 
-      return res
-        .status(200)
-        .json({
-          ...respBody.SUCCESS.NEW_USER_CREATE,
-          success: true,
-          data: newUser
-        });
+      return res.status(200).json({
+        ...respBody.SUCCESS.NEW_USER_CREATE,
+        success: true,
+        data: newUser
+      });
     }
   } catch (error) {
     return res.status(500).json({ ...respBody.ERROR.UNEXPECTED_ERROR });
