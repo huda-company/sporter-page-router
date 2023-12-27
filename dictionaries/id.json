@@ -1,0 +1,24 @@
+{
+  "Index": {
+    "title": "judul"
+  },
+  "Signin": {
+    "signin": "masuk",
+    "dontHaveAcc": "belum punya akun ?",
+    "createNow": "Daftar Sekarang"
+  },
+  "Signup": {
+    "name": "Nama",
+    "phone": "Telepon",
+    "birthDate": "Tanggal Lahir",
+    "gender": "Jenis kelamin",
+    "register": "Daftar",
+    "alreadyHaveAcc": "Sudah punya akun"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "ganti ke {locale, select, id {ID} en {English} other {Unknown}}"
+  },
+  "PageLayout": {
+    "pageTitle": "next-intl"
+  }
+}
