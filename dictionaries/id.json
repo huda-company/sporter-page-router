@@ -1,6 +1,7 @@
 {
   "Index": {
-    "title": "judul"
+    "title": "judul",
+    "description": "deskripsi"
   },
   "Signin": {
     "signin": "masuk",

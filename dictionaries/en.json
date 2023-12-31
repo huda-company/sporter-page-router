@@ -1,6 +1,7 @@
 {
   "Index": {
-    "title": "title"
+    "title": "title",
+    "description": "description"
   },
   "Signin": {
     "signin": "sign in",
