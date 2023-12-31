@@ -1,0 +1,25 @@
+{
+  "Index": {
+    "title": "title",
+    "description": "description"
+  },
+  "Signin": {
+    "signin": "sign in",
+    "dontHaveAcc": "dont have account ?",
+    "createNow": "Create Now"
+  },
+  "Signup": {
+    "name": "Name",
+    "phone": "Phone",
+    "birthDate": "Birth Date",
+    "gender": "Gender",
+    "register": "Register",
+    "alreadyHaveAcc": "Already have account"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Switch to {locale, select, id {Bahasa} en {English} other {Unknown}}"
+  },
+  "PageLayout": {
+    "pageTitle": "next-intl"
+  }
+}
