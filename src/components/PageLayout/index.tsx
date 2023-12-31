@@ -1,6 +1,17 @@
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import { ReactNode } from 'react';
+import { getStaticPropsUtil } from '^/utils/getStaticPropsUtil';
+import Topbar from '../Topbar/Topbar';
+import Footer from '../Footer/Footer';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from '../ui/carousel';
+import { Card, CardContent } from '../ui/card';
 
 type Props = {
   children?: ReactNode;
@@ -8,25 +19,29 @@ type Props = {
 };
 
 export default function PageLayout({ children, title }: Props) {
-  const t = useTranslations('PageLayout');
+  const t = useTranslations('Index');
 
   return (
     <>
       <Head>
-        <title>{[title, t('pageTitle')].join(' - ')}</title>
+        <title>SPORTER</title>
       </Head>
       <div
+        className="px-[0.5rem]"
         style={{
-          padding: 24,
           fontFamily: 'system-ui, sans-serif',
           lineHeight: 1.5
         }}
       >
-        <div style={{ maxWidth: 510 }}>
-          <h1>{title}</h1>
+        <div>
+          <Topbar />
+
           {children}
+
+          <Footer />
         </div>
       </div>
     </>
   );
 }
+export { getStaticPropsUtil };
