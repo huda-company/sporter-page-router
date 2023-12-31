@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import LocaleSwitcher from '@/components/LocalSwitcher';
 import PageLayout from '@/components/PageLayout';
 import { GetStaticPropsContext } from 'next';
